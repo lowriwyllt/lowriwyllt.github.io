@@ -76,7 +76,7 @@ section {
 #introText {
     grid-area: text;
     margin: 20px;
-    font-size: 20px;
+    /* font-size: 20px; */
     text-align: justify;
 }
 
@@ -197,6 +197,17 @@ footer {
         [row2-start] "image" auto [row2-end]
         / 1fr;
         margin:5px;
-        font-size: 10px;
+    }
+
+    #intoFigure {
+        min-width: auto;
+    }
+
+    figure img  {
+        width: 98%;
+    }
+    
+    figure figcaption {
+        width: 98%;
     }
 }
