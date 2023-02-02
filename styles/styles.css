@@ -77,7 +77,7 @@ section {
     grid-area: text;
     margin: 20px;
     /* font-size: 20px; */
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 #intoFigure {
