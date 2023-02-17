@@ -181,6 +181,17 @@ footer {
     padding-bottom: 20px;
 }
 
+.icon {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.contact_details {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
 @media only screen and (max-width: 768px)  {
     /* I wanted to make like a nav bar on the side when screen is small but maybe too complicated rn */
     /* main {
