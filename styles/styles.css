@@ -221,4 +221,13 @@ footer {
     figure figcaption {
         width: 98%;
     }
+
+    .experience {
+        display: grid;
+        grid-template: 
+        [row1-start] "title" auto [row1-end]
+        [row2-start] "date" auto [row2-end]
+        [row2-start] "info" auto [row2-end]
+        / 1fr;
+    }
 }
