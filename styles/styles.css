@@ -195,19 +195,20 @@ footer {
 
 tbody tr:nth-child(odd) {
     background-color: var(--lightpink);
-  }
+}
   
-  tbody tr:nth-child(even) {
+tbody tr:nth-child(even) {
     background-color: var(--pink);
-  }
+}
   
-  tbody tr {
+tbody tr {
     background-image: url(noise.png);
-  }
+}
   
-  table {
+table {
     background-color: var(--beige);
-  }
+    margin:auto;
+}
 
 @media only screen and (max-width: 768px)  {
     /* I wanted to make like a nav bar on the side when screen is small but maybe too complicated rn */
