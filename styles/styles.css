@@ -1,5 +1,6 @@
 :root {
     --pink: #ff8881;
+    --lightpink: #fea29d;
     --blue: #c2ddfa;
     --green: #71d1d0;
     --lightGreen: #bef9f8;
@@ -191,6 +192,22 @@ footer {
     justify-content: center;
     margin: 10px;
 }
+
+tbody tr:nth-child(odd) {
+    background-color: var(--lightpink);
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: var(--pink);
+  }
+  
+  tbody tr {
+    background-image: url(noise.png);
+  }
+  
+  table {
+    background-color: var(--beige);
+  }
 
 @media only screen and (max-width: 768px)  {
     /* I wanted to make like a nav bar on the side when screen is small but maybe too complicated rn */
