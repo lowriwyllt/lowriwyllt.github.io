@@ -35,12 +35,16 @@ main {
     font-style: italic;
 }
 
-h1{
+h1 {
     font-family: 'Lobster Two', cursive;
     font-size: 90px;
     margin-bottom: 50px;
     text-shadow: -4px 0 var(--beige);
     color: var(--grey);
+}
+
+h1 a, nav a {
+    text-decoration: none; 
 }
 
 h2 {
