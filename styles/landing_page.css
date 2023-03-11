@@ -1,56 +1,18 @@
+/* General */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.center {
-  position: absolute;
-  top: 35%;
-  left: 25%;
-}
-
-.Navbar {
-  background-color: #f1e5e5;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  padding: 2px;
-  font-family: sans-serif;
-  color: black;
-  flex-direction: column;
-  width: 54px;
-  height: 100vh;
-  align-items: end;
-}
-
-.icon {
-  height: 50px;
-}
-
-.Navbar__Link {
-  text-align: right;
-}
-
-.Navbar__Items {
-  padding: 14px;
-  flex-direction: column;
-  display: none;
-  margin-top: 20px;
-}
-
-.Navbar__Items__ToggleShow {
-  display: flex;
-}
-
-.Navbar__ToggleShow {
-  width: 100px;
+h1 {
+  font-family: "Lobster Two", cursive;
+  font-size: 90px;
+  margin-bottom: 20px;
 }
 
 main {
   width: 100vw;
-  background-color: #f1e5e5;
 }
 
 .page {
@@ -58,4 +20,105 @@ main {
   justify-items: right;
   align-items: safe center;
   width: 100vw;
+}
+
+body {
+  background-color: #f3fafb;
+}
+
+p {
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+}
+
+/* Centre Zone */
+.center {
+  position: absolute;
+  top: 12vh;
+  left: 10vw;
+}
+
+.centeredDiv {
+  width: 75vw;
+  height: 75vh;
+  color: #381a4b;
+  display: grid;
+  grid-template:
+    [row1-start] "image text" auto [row1-end]
+    / 3fr 4fr;
+}
+
+#img_lowri {
+  width: 100%;
+  /* height: 75vh; */
+}
+
+/* Navbar */
+.Navbar {
+  background-color: #a3a0c3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  padding: 5px;
+  font-family: sans-serif;
+  color: #381a4b;
+  flex-direction: column;
+  width: 54px;
+  height: 100vh;
+  align-items: end;
+  box-shadow: 2px 0px 10px 5px #381a4b;
+}
+
+.icon {
+  width: 45px;
+}
+
+.Navbar__Items {
+  flex-direction: column;
+}
+
+.Navbar__links {
+  padding: 14px;
+  flex-direction: column;
+  display: none;
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+  text-align: right;
+}
+
+.Navbar__links__ToggleShow {
+  display: flex;
+}
+
+.Navbar__Icon {
+  display: flex;
+}
+
+.Navbar__ToggleShow {
+  width: 100px;
+}
+
+.Navbar__Icons {
+  margin: 5px 3px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+/* Footer */
+footer {
+  background-color: #2e97a9;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  box-shadow: 0px 2px 10px 5px #256fd1;
+}
+
+/* Makes it able to shrink */
+@media only screen and (max-width: 768px) {
 }
