@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game_button {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  margin: 2px;
+}
+
+.game {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: rgb(94, 150, 144);
+  width: 100vw;
+}
+
+.reset_button {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  margin: 10px auto;
+}
+
+.center {
+  width: 100vw;
+  display: flex;
+}
+
+.scores {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scores th,
+.scores td {
+  width: 150px;
+  padding: 5px 40px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#winner_statment {
+  margin: 100px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.form {
+  /* position: absolute;
+  right: 10px;
+  top: 125px; */
+  text-align: center;
+}
+
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.not_displayed {
+  display: none;
+}
+
+.show {
+  display: block;
+}
