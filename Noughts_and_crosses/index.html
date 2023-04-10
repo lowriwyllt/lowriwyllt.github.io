@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Noughts and Crosses</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="title"><a href="/index.html">Lowri Roberts</a></h1>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/scripts/CV.html">CV</a></li>
+          <li><a href="/scripts/Travel.html">Travel</a></li>
+          <li class="thisPage">
+            <a href="/Noughts_and_crosses/index.html">Noughts and Crosses</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="center">
+        <h2>Noughts and Crosses</h2>
+      </div>
+      <h3 class="not_displayed" id="winner_statment"></h3>
+      <form class="form">
+        <label for="player1-name"> What is player1's name?</label>
+        <input id="player1-name" name="player1-name" type="text" required />
+        <br />
+        <label for="player1-symbol">What is player1's symbol</label>
+        <input id="player1-symbol" name="player1-symbol" type="text" />
+        <br />
+        <br />
+        <label for="player2-name"> What is player2's name?</label>
+        <input id="player2-name" name="player2-name" type="text" required />
+        <br />
+        <label for="player2-symbol">What is player2's symbol</label>
+        <input id="player2-symbol" name="player2-symbol" type="text" />
+        <br />
+        <br />
+        <button>Play Game!</button>
+      </form>
+      <div class="not_displayed" id="playGame">
+        <table class="game">
+          <tr>
+            <td>
+              <button class="game_button" id="0_0"></button>
+            </td>
+            <td>
+              <button class="game_button" id="0_1"></button>
+            </td>
+            <td>
+              <button class="game_button" id="0_2"></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="game_button" id="1_0"></button>
+            </td>
+            <td>
+              <button class="game_button" id="1_1"></button>
+            </td>
+            <td>
+              <button class="game_button" id="1_2"></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="game_button" id="2_0"></button>
+            </td>
+            <td>
+              <button class="game_button" id="2_1"></button>
+            </td>
+            <td>
+              <button class="game_button" id="2_2"></button>
+            </td>
+          </tr>
+        </table>
+        <div class="center">
+          <button class="reset_button">Reset</button>
+        </div>
+      </div>
+      <table class="scores">
+        <tr>
+          <th id="name1"></th>
+          <th id="name2"></th>
+        </tr>
+        <tr>
+          <th id="symbol1_header"></th>
+          <th id="symbol2_header"></th>
+        </tr>
+        <tr>
+          <td id="score_X">0</td>
+          <td id="score_O">0</td>
+        </tr>
+      </table>
+    </main>
+    <footer>
+      <h2>Contact me</h2>
+      <div class="contact_details">
+        <img src="/images/mail_icon.png" alt="A mail icon" class="icon" />
+        <p>email: lowri.g.roberts@hotmail.com</p>
+      </div>
+      <div class="contact_details">
+        <img src="/images/phone_icon.png" alt="A phone icon" class="icon" />
+        <p>phone number: +44 7826 195 764</p>
+      </div>
+    </footer>
+  </body>
+</html>
