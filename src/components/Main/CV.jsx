@@ -1,46 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap"
-      rel="stylesheet"
-    />
-    <title>CV Lowri</title>
-  </head>
-  <body>
-    <header>
-      <h1 class="title"><a href="./index.html">Lowri Roberts</a></h1>
-      <nav>
+function CV() {
+  return (
+    <main>
+      <h1>CV</h1>
+      <nav className="pageContent">
+        <h2>Content</h2>
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li class="thisPage"><a href="./CV.html">CV</a></li>
-          <li><a href="./Travel.html">Travel</a></li>
           <li>
-            <a href="/Noughts_and_crosses/index.html">Noughts and Crosses</a>
+            <a href="#intro">Introduction</a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="#work">Work Experience</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#interests">Interests</a>
           </li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <h2>CV</h2>
-      <nav class="pageContent">
-        <h3>Content</h3>
-        <ul>
-          <li><a href="#intro">Introduction</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#work">Work Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#interests">Interests</a></li>
-        </ul>
-      </nav>
       <section id="intro">
-        <h3>Intoduction</h3>
+        <h2>Intoduction</h2>
         <p>
           I am an enthusiastic and motivated Physics graduate. I have strong
           problem-solving and creative skills and enjoy learning about how the
@@ -48,58 +31,60 @@
         </p>
       </section>
       <section id="education">
-        <h3>Education</h3>
-        <div class="experience">
-          <h4 class="experienceTitle">
+        <h2>Education</h2>
+        <div className="experience">
+          <h4 className="experienceTitle">
             BSc (Hons) Physics with Astrophysics | University of Bath
           </h4>
-          <h4 class="experienceDate">
-            <time datetime="2019-09">09/2019</time>-<time datetime="2022-07"
-              >07/2022</time
-            >
+          <h4 className="experienceDate">
+            <time dateTime="2019-09">09/2019</time>-
+            <time dateTime="2022-07">07/2022</time>
           </h4>
-          <p class="experienceInfo">
+          <p className="experienceInfo">
             First-year unit grade: Overall average First Class Honours
-            <br />Second-year unit grade: Overall average Second Class Honours
-            (2:1) <br />Degree grade: Overall average Second Class Honours
-            (2:2).
+            <br />
+            Second-year unit grade: Overall average Second Class Honours (2:1){" "}
+            <br />
+            Degree grade: Overall average Second Class Honours (2:2).
           </p>
         </div>
-        <div class="experience">
-          <h4 class="experienceTitle">WJEC A level | Ysgol Dyffryn Conwy</h4>
-          <h4 class="experienceDate">
-            <time datetime="2015-09">09/2015</time>-<time datetime="2017-06"
-              >06/2017</time
-            >
+        <div className="experience">
+          <h4 className="experienceTitle">
+            WJEC A level | Ysgol Dyffryn Conwy
           </h4>
-          <p class="experienceInfo">
+          <h4 className="experienceDate">
+            <time dateTime="2015-09">09/2015</time>-
+            <time dateTime="2017-06">06/2017</time>
+          </h4>
+          <p className="experienceInfo">
             A-level: A in Physics and Mathematics and B in Biology and Welsh
-            Baccalaureate. <br />AS: D in Chemistry.
+            Baccalaureate. <br />
+            AS: D in Chemistry.
           </p>
         </div>
-        <div class="experience">
-          <h4 class="experienceTitle">WJEC GCSE | Ysgol y Moelwyn</h4>
-          <h4 class="experienceDate">
-            <time datetime="2017-09">09/2017</time>-<time datetime="2019-06"
-              >06/2019</time
-            >
+        <div className="experience">
+          <h4 className="experienceTitle">WJEC GCSE | Ysgol y Moelwyn</h4>
+          <h4 className="experienceDate">
+            <time dateTime="2017-09">09/2017</time>-
+            <time dateTime="2019-06">06/2019</time>
           </h4>
-          <p class="experienceInfo">
+          <p className="experienceInfo">
             5A*, 4A and 2B with A* in Mathematics and Science, A in Welsh and B
             in English.
           </p>
         </div>
       </section>
       <section id="work">
-        <h3>Work Experience</h3>
-        <div class="experience">
-          <h4 class="experienceTitle">Demonstrating | University of Bath</h4>
-          <h4 class="experienceDate">
-            <time datetime="2021-09">09/2021</time>-<time datetime="2021-12"
-              >12/2021</time
-            >
+        <h2>Work Experience</h2>
+        <div className="experience">
+          <h4 className="experienceTitle">
+            Demonstrating | University of Bath
           </h4>
-          <p class="experienceInfo">
+          <h4 className="experienceDate">
+            <time dateTime="2021-09">09/2021</time>-
+            <time dateTime="2021-12">12/2021</time>
+          </h4>
+          <p className="experienceInfo">
             Working in the second-year laboratory sessions helping to teach and
             guide students through the scripts I had helped develop. This model
             of teaching was taken up after I noticed that there was a shortage
@@ -109,12 +94,14 @@
             cohort are being invited to participate.
           </p>
         </div>
-        <div class="experience">
-          <h4 class="experienceTitle">Summer Placement | University of Bath</h4>
-          <h4 class="experienceDate">
-            <time datetime="2021-08">08/2021</time> - 4 weeks
+        <div className="experience">
+          <h4 className="experienceTitle">
+            Summer Placement | University of Bath
           </h4>
-          <p class="experienceInfo">
+          <h4 className="experienceDate">
+            <time dateTime="2021-08">08/2021</time> - 4 weeks
+          </h4>
+          <p className="experienceInfo">
             My lab partner and I helped develop scripts and code to integrate
             Arduinos into the second-year electronics lab sessions, since the
             students were yet to learn C, we used Firmata (which in simple terms
@@ -126,67 +113,67 @@
             would like to incorporate them into their teaching in the future.
           </p>
         </div>
-        <div class="experience">
-          <h4 class="experienceTitle">
+        <div className="experience">
+          <h4 className="experienceTitle">
             Tourist Information Centre assistant | Snowdonia National Park
           </h4>
-          <h4 class="experienceDate">
-            <time datetime="2018">2018</time>-<time datetime="2021">2021</time>
+          <h4 className="experienceDate">
+            <time dateTime="2018">2018</time>-<time dateTime="2021">2021</time>
           </h4>
-          <p class="experienceInfo">
+          <p className="experienceInfo">
             Increased my knowledge of Snowdonia National Park. Developed
             patience and gained confidence in communicating in English as well
             as Welsh. Numeracy when handling money in the till, cashing up &
             balance till at the end of the day.
           </p>
         </div>
-        <div class="experience">
-          <h4 class="experienceTitle">Green Lifestyle | Y Dref Werdd</h4>
-          <h4 class="experienceDate">
-            <time datetime="2016-06">09/2021</time> - 5 days
+        <div className="experience">
+          <h4 className="experienceTitle">Green Lifestyle | Y Dref Werdd</h4>
+          <h4 className="experienceDate">
+            <time dateTime="2016-06">09/2021</time> - 5 days
           </h4>
-          <p class="experienceInfo">
+          <p className="experienceInfo">
             This company raises awareness on how to live a green lifestyle.
             Helping organising an upcoming event.
           </p>
         </div>
-        <div class="experience">
-          <h4 class="experienceTitle">
+        <div className="experience">
+          <h4 className="experienceTitle">
             Wardens and History departments | Snowdonia National Park
           </h4>
-          <h4 class="experienceDate">
-            <time datetime="2015-12">12/2015</time> - 5 days
+          <h4 className="experienceDate">
+            <time dateTime="2015-12">12/2015</time> - 5 days
           </h4>
-          <p class="experienceInfo">
+          <p className="experienceInfo">
             Helping in the researching into a Welsh hero and his home they were
             restoring at the time. Aiding the wardens with their routes surveys
             using a database, and inputting data into excel.
           </p>
         </div>
-        <div class="experience">
-          <h4 class="experienceTitle">Veterinary | Dolgellau</h4>
-          <h4 class="experienceDate">
-            <time datetime="2015-08">08/2015</time> - 3 days
+        <div className="experience">
+          <h4 className="experienceTitle">Veterinary | Dolgellau</h4>
+          <h4 className="experienceDate">
+            <time dateTime="2015-08">08/2015</time> - 3 days
           </h4>
-          <p class="experienceInfo">
+          <p className="experienceInfo">
             I had a range of experiences from pinning a foal down whilst it had
             its jabs, observing as the vets helped a cow give birth,
             introduction into how to use ultrasound equipment to measuring the
             valves of the heart.
           </p>
         </div>
-        <div class="experience">
-          <h4 class="experienceTitle">Bar | CellB</h4>
-          <h4 class="experienceDate">
-            <time datetime="2014">2014</time>-<time datetime="2018">2018</time>
+        <div className="experience">
+          <h4 className="experienceTitle">Bar | CellB</h4>
+          <h4 className="experienceDate">
+            <time dateTime="2014">2014</time>-<time dateTime="2018">2018</time>
           </h4>
-          <p class="experienceInfo">
+          <p className="experienceInfo">
             I worked my way from a pot wash, waitressing to serving at the bar.
           </p>
         </div>
       </section>
       <section id="skills">
-        <h3>Skills</h3>
+        <h2>Skills</h2>
         <table>
           <thead>
             <tr>
@@ -340,7 +327,7 @@
         </table>
       </section>
       <section id="interests">
-        <h3>Interests</h3>
+        <h2>Interests</h2>
         <p>
           At university, I joined the gym which I try to attend often with my
           friends as we help motivate each other and is a good way to keep
@@ -350,16 +337,7 @@
         </p>
       </section>
     </main>
-    <footer>
-      <h2>Contact me</h2>
-      <div class="contact_details">
-        <img src="../images/mail_icon.png" alt="A mail icon" class="icon" />
-        <p>email: lowri.g.roberts@hotmail.com</p>
-      </div>
-      <div class="contact_details">
-        <img src="../images/phone_icon.png" alt="A phone icon" class="icon" />
-        <p>phone number: +44 7826 195 764</p>
-      </div>
-    </footer>
-  </body>
-</html>
+  );
+}
+
+export default CV;
