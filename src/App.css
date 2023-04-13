@@ -1,0 +1,156 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: #f3fafb;
+  display: grid;
+  grid-template:
+    "main nav" auto
+    "footer nav" 50px / 1fr 54px;
+  color: #381a4b;
+  font-family: "Caveat", cursive;
+  font-size: max(1.7vw, 16px);
+}
+
+.AppNav {
+  grid-template:
+    "main nav" auto
+    "footer nav" 50px / 1fr 100px;
+}
+
+h1 {
+  font-family: "Lobster Two", cursive;
+  font-size: max(5vw, 25px);
+  margin-bottom: max(1vw, 5px);
+}
+
+h2 {
+  font-family: "Lobster Two", cursive;
+  font-size: max(4vw, 20px);
+  margin: max(1vw, 5px);
+}
+
+h4 {
+  font-family: "Lobster Two", cursive;
+  font-size: max(2vw, 16px);
+  margin: max(1vw, 5px);
+}
+
+main {
+  width: 75%;
+  margin: 5vw auto;
+  grid-area: main;
+}
+
+/* main p,
+main li,
+td {
+  font-family: "Caveat", cursive;
+  font-size: max(1.7vw, 16px);
+} */
+
+/* Centre Zone */
+.centeredDiv {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template:
+    [row1-start] "image text" auto [row1-end]
+    / 3fr 4fr;
+}
+
+#img_lowri {
+  width: 100%;
+}
+
+/* Navbar */
+.Navbar {
+  position: sticky;
+  top: 0;
+  right: 0;
+  background-color: #b6b4d0;
+  display: flex;
+  padding: 5px;
+  grid-area: nav;
+  font-family: sans-serif;
+  color: #381a4b;
+  flex-direction: column;
+  width: 54px;
+  height: 100vh;
+  min-height: 100vh;
+  align-items: end;
+  box-shadow: 2px 0px 10px 5px #381a4b;
+  clip-path: inset(0px 0px 0px -10px);
+}
+
+.icon {
+  width: 45px;
+}
+
+/* .Navbar__Items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+.Navbar__links {
+  padding: 14px;
+  flex-direction: column;
+  display: none;
+  font-family: "Caveat", cursive;
+  font-size: max(2vw, 25px);
+  text-align: right;
+}
+
+.Navbar__links__ToggleShow {
+  display: flex;
+}
+
+.Navbar__ToggleShow {
+  width: 100px;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Navbar__Icons {
+  margin: 5px 3px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+/* Footer */
+footer {
+  background-color: #381a4b; /*#2e97a9*/
+  color: #f3fafb;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  grid-area: footer;
+  width: 100%;
+  min-height: 50px;
+  font-family: "Caveat", cursive;
+  font-size: max(1.6vw, 16px);
+  box-shadow: 0px 2px 10px 5px #381a4b;
+  clip-path: inset(-10px 0px 0px -10px);
+}
+
+/* Makes it able to shrink */
+@media only screen and (max-width: 768px) {
+  .centeredDiv {
+    grid-template:
+      [row1-start] "image" auto [row1-end]
+      [row2-start] "text" auto [row2-end]
+      / 1fr;
+  }
+}
