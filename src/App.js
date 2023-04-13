@@ -25,6 +25,9 @@ function App() {
   const [name_2, setName_2] = useState("Player2");
   const [firstSymbol, setFirstSymbol] = useState("");
   const [symbol, setSymbol] = useState("");
+  // console.log(symbol1);
+  // console.log(firstSymbol);
+  // console.log(symbol);
 
   return (
     <div className={appClass}>
@@ -56,6 +59,7 @@ function App() {
               symbol2={symbol2}
               name_1={name_1}
               name_2={name_2}
+              symbol={symbol}
             />
           }
         />

@@ -21,9 +21,9 @@ function NavLinks({ activeNavbar, setActiveNavbar }) {
       <Link to="/travel" className="Navbar__Link">
         <p onClick={handleOnClick}>Travel</p>
       </Link>
-      <Link to="/games" className="Navbar__Link">
+      {/* <Link to="/games" className="Navbar__Link">
         <p onClick={handleOnClick}>Games</p>
-      </Link>
+      </Link> */}
     </div>
   );
 }

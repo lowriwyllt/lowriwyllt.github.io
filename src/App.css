@@ -145,6 +145,16 @@ footer {
   clip-path: inset(-10px 0px 0px -10px);
 }
 
+.game_button {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  margin: 2px;
+}
+
 /* Makes it able to shrink */
 @media only screen and (max-width: 768px) {
   .centeredDiv {

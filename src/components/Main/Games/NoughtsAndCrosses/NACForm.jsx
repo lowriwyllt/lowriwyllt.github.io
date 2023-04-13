@@ -35,16 +35,20 @@ function NACForm({
       <Link to="/games">back to all games</Link>
       <form className="form" onSubmit={handleSubmit}>
         <label htmlFor="player1-name"> What is player1's name?</label>
+        <br />
         <input id="player1-name" name="player1-name" type="text" required />
         <br />
         <label htmlFor="player1-symbol">What is player1's symbol</label>
+        <br />
         <input id="player1-symbol" name="player1-symbol" type="text" />
         <br />
         <br />
         <label htmlFor="player2-name"> What is player2's name?</label>
+        <br />
         <input id="player2-name" name="player2-name" type="text" required />
         <br />
         <label htmlFor="player2-symbol">What is player2's symbol</label>
+        <br />
         <input id="player2-symbol" name="player2-symbol" type="text" />
         <br />
         <br />
