@@ -10,6 +10,7 @@ import NACForm from "./components/Main/Games/NoughtsAndCrosses/NACForm";
 import NACGame from "./components/Main/Games/NoughtsAndCrosses/NACGame";
 import NACEnd from "./components/Main/Games/NoughtsAndCrosses/NACEnd";
 import { Route, Routes } from "react-router";
+import AnimalHatOMatic from "./components/Main/Games/Animal-Hat-O-Matic/AnimalHatOMatic";
 
 function App() {
   const [activeNavbar, setActiveNavbar] = useState(false);
@@ -67,6 +68,7 @@ function App() {
           path="/games/naughtsandcrosses/endstatment"
           element={<NACEnd />}
         />
+        <Route path="/games/animalhatomatic" element={<AnimalHatOMatic />} />
       </Routes>
       <Navbar activeNavbar={activeNavbar} setActiveNavbar={setActiveNavbar} />
       <Footer />

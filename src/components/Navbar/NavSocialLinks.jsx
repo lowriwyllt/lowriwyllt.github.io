@@ -6,12 +6,20 @@ function NavSocialLinks() {
           href="https://www.linkedin.com/in/lowri-gwenllian-roberts/"
           target="_blank"
         >
-          <img className="icon" src="images/LI-In-Bug.png" />
+          <img
+            className="icon"
+            src="images/LI-In-Bug.png"
+            alt="linkedIn icon"
+          />
         </a>
       </div>
       <div className="Navbar__Icon">
         <a href="https://github.com/lowriwyllt" target="_blank">
-          <img className="icon" src="images/github-mark.png" />
+          <img
+            className="icon"
+            src="images/github-mark.png"
+            alt="github icon"
+          />
         </a>
       </div>
     </div>
