@@ -5,7 +5,7 @@ function Home() {
         <div className="centeredDiv">
           <img
             id="img_lowri"
-            src="images/lowri.png"
+            src={window.location.origin + "/images/lowri.png"}
             alt="Drawing of me, Lowri Roberts, on the island of Capri in Italy"
           />
           <div>

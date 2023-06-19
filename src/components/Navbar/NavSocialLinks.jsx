@@ -8,7 +8,7 @@ function NavSocialLinks() {
         >
           <img
             className="icon"
-            src="images/LI-In-Bug.png"
+            src={window.location.origin + "/images/LI-In-Bug.png"}
             alt="linkedIn icon"
           />
         </a>
@@ -17,7 +17,7 @@ function NavSocialLinks() {
         <a href="https://github.com/lowriwyllt" target="_blank">
           <img
             className="icon"
-            src="images/github-mark.png"
+            src={window.location.origin + "/images/github-mark.png"}
             alt="github icon"
           />
         </a>

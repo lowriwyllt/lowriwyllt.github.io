@@ -155,6 +155,21 @@ footer {
   margin: 2px;
 }
 
+.hatOMatic img {
+  max-width: 60vw;
+  max-height: 60vh;
+  border-radius: 20px;
+  display: block;
+  margin: 20px auto;
+}
+.hatOMatic button {
+  display: block;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
 /* Makes it able to shrink */
 @media only screen and (max-width: 768px) {
   .centeredDiv {

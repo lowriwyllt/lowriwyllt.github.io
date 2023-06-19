@@ -3,11 +3,12 @@ import Img from "./Img.jsx";
 import { useState } from "react";
 
 function AnimalHatOMaticMain() {
-  const [hat, setHat] = useState(true);
-  console.log("main:", hat);
+  const [hat, setHat] = useState(false);
+
   return (
-    <div>
+    <div className="hatOMatic">
       <Img currentHat={hat} />
+      <br />
       <Button setHat={setHat} hat={hat} />
     </div>
   );

@@ -6,7 +6,7 @@ function MenuButton({ activeNavbar, setActiveNavbar }) {
     <div className="Navbar__Link Navbar__Link-toggle">
       <img
         className="icon"
-        src="images/menu_icon.png"
+        src={window.location.origin + "/images/menu_icon.png"}
         alt="menu icon"
         onClick={handleClick}
       />
